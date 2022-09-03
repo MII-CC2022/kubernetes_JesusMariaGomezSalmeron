@@ -55,3 +55,8 @@ Se actualiza el deplyment de vote con la última versión (etiqueta after) que s
 kubectl set image deployments/vote vote=dockersamples/examplevotingapp_vote:after
 ```
 
+#
+Para finalizar, se emplea la esrategia canary para hacer un ejemplo de despliegue. Para ello se crea un nuevo deployment del servicio vote mediante un archivo yaml que se llame igual incluyendo el sufijo "canary-" y se le aplican los cambios que se pueden observar si se accede a la carpeta k8s-vote-app de este mismo repositorio. Ya solo queda crear la implementación:
+```
+kubectl create -f canary-vote-deployment.yaml
+```
