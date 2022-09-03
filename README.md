@@ -32,7 +32,7 @@ cd ..
 ```
 ![k8_2](https://user-images.githubusercontent.com/75556597/187822440-5540709e-740c-47a5-88d7-b9a63a74ae99.png)
 
-Posteriormente, se expone el puerto 31 y se comprueba la dirección en la que se encuentra disponible el servicio
+Posteriormente, se expone el puerto 31000 y se comprueba la dirección en la que se encuentra disponible el servicio
 ```
 kubectl expose deployment vote-app --type=LoadBalancer --port 31
 kubectl get service
