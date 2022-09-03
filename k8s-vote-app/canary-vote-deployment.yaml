@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: vote
+    name: canary-vote
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vote
+  template:
+    metadata:
+      labels:
+        app: vote
+        track: canary
+        version: 2.0.0
+    spec:
+      containers:
+      - image: dockersamples/examplevotingapp_vote:before
+        name: vote
+        ports:
+        - containerPort: 80
+          name: vote
