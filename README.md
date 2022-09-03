@@ -48,3 +48,10 @@ Como pide la práctica, se escala con el comando correspondiente. En este caso s
 ```
 kubectl scale deployments/vote --replicas=5
 ```
+
+#
+Se actualiza el deplyment de vote con la última versión (etiqueta after) que se encuentra en el repositorio DockerHub
+```
+kubectl set image deployments/vote vote=dockersamples/examplevotingapp_vote:after
+```
+
