@@ -6,7 +6,7 @@ gcloud config set compute/zone us-central1-a
 ```
 Puede ser que no se haya habilitado la API de Kubernetes, en ese caso se hace con:
 ```
-gcloud container clusters create voteapp-k
+gcloud services enable container.googleapis.com
 ```
 Acto seguido, se crea el clúster
 ```
