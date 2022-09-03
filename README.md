@@ -42,3 +42,9 @@ kubectl get service
 Se comprueba su funcionamiento en el navegador
 
 ![k8_4](https://user-images.githubusercontent.com/75556597/187823408-902f0a4d-d3af-4ab5-86c2-3d86a9fd4a1b.png)
+
+#
+Como pide la práctica, se escala con el comando correspondiente. En este caso se escala el servicio de votos.
+```
+kubectl scale deployments/vote --replicas=5
+```
