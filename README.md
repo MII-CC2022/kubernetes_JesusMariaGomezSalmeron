@@ -4,6 +4,10 @@ Primero, se configura la zona
 ```
 gcloud config set compute/zone us-central1-a
 ```
+Puede ser que no se haya habilitado la API de Kubernetes, en ese caso se hace con:
+```
+gcloud container clusters create voteapp-k
+```
 Acto seguido, se crea el clúster
 ```
 gcloud container clusters create voteapp-k
