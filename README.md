@@ -34,7 +34,7 @@ cd ..
 
 Posteriormente, se expone el puerto 31000 y se comprueba la dirección en la que se encuentra disponible el servicio
 ```
-kubectl expose deployment vote-app --type=LoadBalancer --port 31
+kubectl expose deployment vote-app --type=LoadBalancer --port 31000
 kubectl get service
 ```
 ![k8_3](https://user-images.githubusercontent.com/75556597/187822695-3070d746-027b-4825-b636-5d138a8ba669.png)
